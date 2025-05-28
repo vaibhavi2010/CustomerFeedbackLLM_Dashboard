@@ -1,0 +1,5 @@
+pandas
+jupyter
+openai
+sqlalchemy
+psycopg2-binary
