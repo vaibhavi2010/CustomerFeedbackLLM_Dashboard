@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='EnrichedFeedback (CustomerFeedbackDB)' inline='true' name='federated.1g8kede0w4pp461cul80m0z7gt9i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MSI\SQLEXPRESS' name='sqlserver.11u8ms608tgqie15yxgns1nn5onc'>
+            <connection authentication='sspi' class='sqlserver' dbname='CustomerFeedbackDB' odbc-native-protocol='yes' one-time-sql='' server='MSI\SQLEXPRESS' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.11u8ms608tgqie15yxgns1nn5onc' name='EnrichedFeedback' table='[dbo].[EnrichedFeedback]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='sqlserver.11u8ms608tgqie15yxgns1nn5onc' name='EnrichedFeedback' table='[dbo].[EnrichedFeedback]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>feedback_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[feedback_id]</local-name>
+            <parent-name>[EnrichedFeedback]</parent-name>
+            <remote-alias>feedback_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feedback_text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[feedback_text]</local-name>
+            <parent-name>[EnrichedFeedback]</parent-name>
+            <remote-alias>feedback_text</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sentiment]</local-name>
+            <parent-name>[EnrichedFeedback]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>topic</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[topic]</local-name>
+            <parent-name>[EnrichedFeedback]</parent-name>
+            <remote-alias>topic</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='EnrichedFeedback' datatype='table' name='[__tableau_internal_object_id__].[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]' role='measure' type='quantitative' />
+      <column caption='Feedback Id' datatype='integer' name='[feedback_id]' role='dimension' type='ordinal' />
+      <column caption='Feedback Text' datatype='string' name='[feedback_text]' role='dimension' type='nominal' />
+      <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+      <column caption='Topic' datatype='string' name='[topic]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='EnrichedFeedback' id='EnrichedFeedback_55C263D201CC422081B9DA03CC37503B'>
+            <properties context=''>
+              <relation connection='sqlserver.11u8ms608tgqie15yxgns1nn5onc' name='EnrichedFeedback' table='[dbo].[EnrichedFeedback]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Sentiment Breakdown</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EnrichedFeedback (CustomerFeedbackDB)' name='federated.1g8kede0w4pp461cul80m0z7gt9i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g8kede0w4pp461cul80m0z7gt9i'>
+            <_.fcp.ObjectModelTableType.true...column caption='EnrichedFeedback' datatype='table' name='[__tableau_internal_object_id__].[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:EnrichedFeedback_55C263D201CC422081B9DA03CC37503B:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Feedback Id' datatype='integer' name='[feedback_id]' role='dimension' type='ordinal' />
+            <column-instance column='[sentiment]' derivation='None' name='[none:sentiment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[feedback_id]' derivation='Count' name='[pcto:cnt:feedback_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='EnrichedFeedback' datatype='integer' name='[__tableau_internal_object_id__].[EnrichedFeedback_55C263D201CC422081B9DA03CC37503B]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[pcto:cnt:feedback_id:qk]' />
+              <text column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]' />
+              <color column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]' />
+              <lod column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[__tableau_internal_object_id__].[pcto:cnt:EnrichedFeedback_55C263D201CC422081B9DA03CC37503B:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]</run>
+                <run>&gt; -&lt;</run>
+                <run>[federated.1g8kede0w4pp461cul80m0z7gt9i].[pcto:cnt:feedback_id:qk]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='size' value='1.1534254550933838' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[__tableau_internal_object_id__].[pcto:cnt:EnrichedFeedback_55C263D201CC422081B9DA03CC37503B:qk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[pcto:cnt:feedback_id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Negative&quot;</value>
+                <value>0.33081361800346221</value>
+                <value>0.33081361800346221</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='84' y='-10' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[__tableau_internal_object_id__].[pcto:cnt:EnrichedFeedback_55C263D201CC422081B9DA03CC37503B:qk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[pcto:cnt:feedback_id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Positive&quot;</value>
+                <value>0.33473744950952106</value>
+                <value>0.33473744950952106</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-78' y='-4' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[__tableau_internal_object_id__].[pcto:cnt:EnrichedFeedback_55C263D201CC422081B9DA03CC37503B:qk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[pcto:cnt:feedback_id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Neutral&quot;</value>
+                <value>0.33444893248701674</value>
+                <value>0.33444893248701674</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='1' y='-17' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{AB15270A-1FBA-4E98-834D-E9F7DC3ADB6F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Top Topics</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EnrichedFeedback (CustomerFeedbackDB)' name='federated.1g8kede0w4pp461cul80m0z7gt9i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g8kede0w4pp461cul80m0z7gt9i'>
+            <column-instance column='[feedback_id]' derivation='Count' name='[cnt:feedback_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Feedback Id' datatype='integer' name='[feedback_id]' role='dimension' type='ordinal' />
+            <column-instance column='[topic]' derivation='None' name='[none:topic:nk]' pivot='key' type='nominal' />
+            <column caption='Topic' datatype='string' name='[topic]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk]' direction='DESC' using='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff007f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]</rows>
+        <cols>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk]</cols>
+      </table>
+      <simple-id uuid='{FBE1040D-CCCB-4E09-9BC5-A6C786DFB575}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Topic vs Sentiment</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EnrichedFeedback (CustomerFeedbackDB)' name='federated.1g8kede0w4pp461cul80m0z7gt9i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g8kede0w4pp461cul80m0z7gt9i'>
+            <column-instance column='[feedback_id]' derivation='Count' name='[cnt:feedback_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Feedback Id' datatype='integer' name='[feedback_id]' role='dimension' type='ordinal' />
+            <column-instance column='[sentiment]' derivation='None' name='[none:sentiment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[topic]' derivation='None' name='[none:topic:nk]' pivot='key' type='nominal' />
+            <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+            <column caption='Topic' datatype='string' name='[topic]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' field-type='quantitative' max='2601' min='79' range-type='fixed' scope='rows' type='space' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]' value='false' />
+            <format attr='display' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' />
+              <text column='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run> &lt;</run>
+                <run>[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='-90' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.637182354927063' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]</rows>
+        <cols>([federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk] / [federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk])</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]</field>
+                    <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:topic:nk]</field>
+                  <field>[federated.1g8kede0w4pp461cul80m0z7gt9i].[Geometry (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2206</value>
+                <value>&quot;Negative&quot;</value>
+                <value>&quot;Performance&quot;</value>
+                <value>%null%</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{6F807F0C-584D-40F8-BF1B-ED71BED5E55C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='9' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' type-v2='layout-basic' w='84900' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 2' w='33484' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='60500' id='5' name='Sheet 1' w='51416' x='34284' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37500' id='6' name='Sheet 3' w='51416' x='34284' y='61500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='135' h='98000' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='13500' x='85700' y='1000'>
+              <zone h='9125' id='10' name='Sheet 3' pane-specification-id='0' param='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' type-v2='color' w='13500' x='85700' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 2' w='33484' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60500' id='5' is-fixed='true' name='Sheet 1' w='51416' x='34284' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37500' id='6' is-fixed='true' name='Sheet 3' w='51416' x='34284' y='61500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='10' name='Sheet 3' pane-specification-id='0' param='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' type-v2='color' w='13500' x='85700' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D5CD8E13-9B1A-4EE3-9756-F81131EB9EE5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1g8kede0w4pp461cul80m0z7gt9i].[none:sentiment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A7E97971-6B58-4F54-9C8B-E2B4BD8CF22D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1F7E931-1AFD-43C9-BBB4-8B7770CC1268}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1g8kede0w4pp461cul80m0z7gt9i].[cnt:feedback_id:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='marks' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{7EF858DD-3053-48B4-A48F-7C9787C43342}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{19A4AE21-DEBE-4C30-A5AE-529EB2F48588}' />
+    </window>
+  </windows>
+</workbook>
