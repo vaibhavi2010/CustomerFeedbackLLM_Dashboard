@@ -51,10 +51,10 @@ Top Topics → Bar Chart
 Topic vs Sentiment → Heatmap / Stacked Bar
 
 ## 🚀 How to Run:
-1️⃣ Run Day3_MOCK_GPT.ipynb → generate enriched_feedback.csv
-2️⃣ Run Day4_SQL_Load.ipynb → load data into SQL Server
-3️⃣ Open Tableau Desktop → Connect to CustomerFeedbackDB
-4️⃣ Build dashboards → save as CustomerFeedbackDashboard.twbx
+1. Run Day3_MOCK_GPT.ipynb → generate enriched_feedback.csv
+2.Run Day4_SQL_Load.ipynb → load data into SQL Server
+3. Open Tableau Desktop → Connect to CustomerFeedbackDB
+4. Build dashboards → save as CustomerFeedbackDashboard.twbx
 
 ## 📊 Tableau Dashboard
 1️⃣ Sentiment Breakdown
